@@ -7,6 +7,11 @@ local keymap = vim.keymap -- for conciseness
 -- General Keymaps
 ---------------------
 
+keymap.set("n", "<S-Up>", ":m-2<CR>")
+keymap.set("n", "<S-Down>", ":m+<CR>")
+keymap.set("i", "<S-Up>", "<Esc>:m-2<CR>")
+keymap.set("i", "<S-Down>", "<Esc>:m+<CR>")
+
 keymap.set("n", "<leader>w", ":w<CR>")
 keymap.set("n", "<leader>wq", ":wq<CR>")
 keymap.set("n", "<leader>q", ":q<CR>")
